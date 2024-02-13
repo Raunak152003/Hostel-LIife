@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(59, 59, 232);
+}
+.box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 60px;
+    width: 300px;
+}
+.announcements{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.announcements:hover{
+    width: 300px;
+    height: 60px;
+    text-align: left;
+    padding: 0 15px;
+    background: rgb(233, 233, 236);
+    transform: translateY(-100%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.announcements:hover .icon{
+    color: blue;
+}
+.announcements .fas{
+    color: blue;
+    line-height: 30px;
+    font-size: 30px;
+}
+.announcements:hover .num:after{
+    content: 'announcements';
+}
+ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+}
+.announcements:hover ul{
+    display: block;
+}
+ul li{
+    list-style: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 8px 0;
+    display: flex;
+
+}
+ul li:last-child{
+    border-bottom: none;
+}
+ul li.icon{
+    width: 24px;
+    height: 24px;
+    background: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right:15px;
+
+}
+ul li .icon .fas{
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+}
+ul li .text{
+    position: relative;
+    font-family: sans-serif;
+    top: 3px;
+    cursor: pointer;
+
+}
+ul li:hover .text{
+    font-weight: bold;
+    color: blue;
+}

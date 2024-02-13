@@ -1,0 +1,32 @@
+.heads{
+    text-decoration-color: blue;
+    font-display: blue;
+    font-size: 30px;
+    text-align: center;
+   
+    background-size: cover;
+    
+    color:white;
+}
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(172, 255, 255);
+    background: url(Hostel\ \(3\).png);
+    }
+    .column {
+        float: left;
+        width:30%;
+        padding: 0px;
+        margin-left: -5px;
+        margin-right:10px;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            row-gap: 5px;
+            padding-right: 3px;
+            }
+            
